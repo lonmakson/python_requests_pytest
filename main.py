@@ -7,7 +7,7 @@ TRAINER_ID = '39681'
 
 request_change_name_pokemon = requests.put(url = f'{URL}/pokemons', headers = {'trainer_token': TOKEN,
                                                                                'Content-Type': 'application/json'}, json = {"pokemon_id": "401057",
-                                                                                                                            "name": "oh myyy no no no",
+                                                                                                                            "name": "oh myyy no",
                                                                                                                             "photo_id": 997})
 print(request_change_name_pokemon.json())
 
