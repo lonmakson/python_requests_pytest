@@ -24,7 +24,7 @@ request_pokeball_pokemon = requests.post(url = f'{URL}/trainers/add_pokeball', h
 response_data_PP = request_pokeball_pokemon.json()
 print(response_data_PP)
 
-request_list_of_enemy = requests.get(url = f'{URL}/pokemons', params = {'in_pokeball': 1, 'attack': 2})
+request_list_of_enemy = requests.get(url = f'{URL}/pokemons', params = {'in_pokeball': 1, 'attack': 1})
 response_data_enemy = request_list_of_enemy.json()['data'][1]
 enemy_id = response_data_enemy.get("id")
 
